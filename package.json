@@ -1,0 +1,22 @@
+{
+  "name": "gitbook-plugin-uri-favicon",
+  "version": "0.0.1",
+  "description": "replaces the gitbook favicon with your own",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo no tests"
+  },
+  "engines": {
+    "gitbook": "*"
+  },
+  "homepage": "https://github.com/xnzone/gitbook-plugin-uri-favicon",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xnzone/gitbook-plugin-uri-favicon"
+  },
+  "author": "xnzone",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
