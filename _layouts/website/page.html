@@ -1,0 +1,19 @@
+{% extends template.self %}
+
+{% block head %}
+
+    {% set _favicon = "https://gitee.com/ixnzone/img-bed/raw/master/favicon.ico" %}
+    {% set _apple = "https://gitee.com/ixnzone/img-bed/raw/master/favicon.png" %}
+
+    {% if config.pluginsConfig['uri-favicon']['favicon'] %} 
+        {% set _favicon = config.pluginsConfig['uri-favicon']['favicon'] %}
+    {% endif %}
+
+    {% if config.pluginsConfig['uri-favicon']['apple'] %} 
+        {% set _apple = config.pluginsConfig['uri-favicon']['apple'] %}
+    {% endif %}
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{ _favicon }}" >
+    <link rel="shortcut icon" type="image/x-icon" href="{{ _apple }}" >
+    {{ super() }}
+{% endblock %}

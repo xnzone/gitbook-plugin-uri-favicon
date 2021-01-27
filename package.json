@@ -16,7 +16,5 @@
   },
   "author": "xnzone",
   "license": "MIT",
-  "dependencies": {
-    "request": "^2.88.2"
-  }
+  "dependencies": {}
 }
